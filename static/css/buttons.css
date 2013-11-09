@@ -1,0 +1,54 @@
+/*
+botones y otras cosas
+*/
+
+.fade{
+	opacity: 0.7;
+	filter:alpha(opacity=7);
+	-ms-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+	
+}
+.fade:hover{
+	opacity: 1;
+	filter:alpha(opacity=10);
+	-ms-transition: all 0.5s ease-in;
+	-moz-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
+	-webkit-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
+}
+
+.leer-mas{
+	background-image: -webkit-gradient(
+		linear,
+		right top,
+		right bottom,
+		color-stop(0.74, #E3E3E3),
+		color-stop(1, #E0DDE0)
+	);
+	background-image: -o-linear-gradient(bottom, #E3E3E3 74%, #E0DDE0 100%);
+	background-image: -moz-linear-gradient(bottom, #E3E3E3 74%, #E0DDE0 100%);
+	background-image: -webkit-linear-gradient(bottom, #E3E3E3 74%, #E0DDE0 100%);
+	background-image: -ms-linear-gradient(bottom, #E3E3E3 74%, #E0DDE0 100%);
+	background-image: linear-gradient(to bottom, #E3E3E3 74%, #E0DDE0 100%);
+	
+	border: solid 2px #eee;
+	border-radius: 3px;
+	color: #6d6d6d;
+	font-size: 1.1em;
+	float: left;
+	padding: 0.2em 2em;
+	text-align: left;
+	text-decoration: none;
+	transition: all 0.8s ease-in;
+}
+
+.leer-mas:hover{
+	letter-spacing: 2px;
+	margin-left: 1em;
+	transition: all 0.8s ease-out;
+}

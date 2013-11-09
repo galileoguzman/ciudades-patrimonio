@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+	{% block content %}
+		{% for Post in post %}
+		<article id="articulo-individual">
+			<h2>{{ Post.title }}</h2>
+			<p>{{ Post.content }}</p>
+		</article>
+		{% endfor %}
+		<section id="articulos-relacionados">
+			<h2>Articulos Relacionados</h2>
+			<article class="articulo-secundario-inicio">
+					<figure>
+						<img src="images/articlo-secundario-inicio-01.jpg" />
+					</figure>
+					<div class="thumb-text">
+						<h3><a href="#">What an excellent event</a></h3>
+						<p>
+						Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks.</p>
+					</div>
+				</article>
+				<article class="articulo-secundario-inicio">
+					<figure>
+						<img src="images/articlo-secundario-inicio-01.jpg" />
+					</figure>
+					<div class="thumb-text">
+						<h3><a href="#">What an excellent event</a></h3>
+						<p>
+						Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks.</p>
+					</div>
+				</article>
+				<article class="articulo-secundario-inicio">
+					<figure>
+						<img src="images/articlo-secundario-inicio-01.jpg" />
+					</figure>
+					<div class="thumb-text">
+						<h3><a href="#">What an excellent event</a></h3>
+						<p>
+						Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks.</p>
+					</div>
+				</article>
+		</section>
+	{% endblock %}

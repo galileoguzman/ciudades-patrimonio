@@ -1,0 +1,45 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+	<title>Ciudades Patrimonio Oaxaca 2013</title>
+
+
+	<script type="text/javascript" src="{% static "js/prefixfree.min.js" %}"></script>
+	<script type="text/javascript" scr="{% static "js/modernizr.js" %}"></script>
+
+	<link rel="stylesheet" type="text/css" href="{% static "css/master.css" %}">
+
+</head>
+<body>
+	<header>
+		<section id="encabezado">
+			<figure>
+				<img src="{% static "images/logo.jpg" %}" alt="Ciudades Patrimonio Oaxaca 2013"/>
+			</figure>
+			<nav>
+				<ul>
+					<li class="degradado-rosa"><a href="#">Inicio</a></li>
+					<li class="degradado-azul"><a href="#">Eventos</a></li>
+					<li class="degradado-verde"><a href="#">Galería</a></li>
+					<li class="degradado-amarillo"><a href="#">Ubicación</a></li>
+				</ul>
+			</nav>
+		</section>
+		<section id="imagen-encabezado">
+			<figure>
+				<img src="{% static "images/montealban.jpg" %}" alt="imagen encabezado" />
+			</figure>
+		</section>
+	</header>
+
+	<section id="wrapper">
+		{% block content %} {% endblock %}
+	</section>
+
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</body>
+</html>

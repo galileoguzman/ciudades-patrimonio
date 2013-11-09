@@ -1,0 +1,84 @@
+#encabezado nav{
+	float: right;
+	margin:0;
+	padding: 0;
+	width: 35%;
+}
+
+#encabezado ul{
+	float: right;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#encabezado li{
+	padding: 30% 1em 0 1em;
+	float: left;
+	min-width: 4em;
+}
+#encabezado a{
+	color: #eee;
+	font-size: 1.2em;
+	text-decoration: none;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+.degradado-rosa{
+	background-image: -webkit-gradient(
+		linear,
+		right bottom,
+		left bottom,
+		color-stop(0.33, #FC03BE),
+		color-stop(1, #FF69D5)
+	);
+	background-image: -o-linear-gradient(left, #FC03BE 33%, #FF69D5 100%);
+	background-image: -moz-linear-gradient(left, #FC03BE 33%, #FF69D5 100%);
+	background-image: -webkit-linear-gradient(left, #FC03BE 33%, #FF69D5 100%);
+	background-image: -ms-linear-gradient(left, #FC03BE 33%, #FF69D5 100%);
+	background-image: linear-gradient(to left, #FC03BE 33%, #FF69D5 100%);
+	}
+.degradado-azul{
+	background-image: -webkit-gradient(
+		linear,
+		right bottom,
+		left bottom,
+		color-stop(0.54, #0A4AAB),
+		color-stop(1, #0079FA)
+	);
+	background-image: -o-linear-gradient(left, #0A4AAB 54%, #0079FA 100%);
+	background-image: -moz-linear-gradient(left, #0A4AAB 54%, #0079FA 100%);
+	background-image: -webkit-linear-gradient(left, #0A4AAB 54%, #0079FA 100%);
+	background-image: -ms-linear-gradient(left, #0A4AAB 54%, #0079FA 100%);
+	background-image: linear-gradient(to left, #0A4AAB 54%, #0079FA 100%);
+
+}
+.degradado-verde{
+	background-image: -webkit-gradient(
+		linear,
+		right bottom,
+		left bottom,
+		color-stop(0.33, #2E6921),
+		color-stop(1, #36B00E)
+	);
+	background-image: -o-linear-gradient(left, #2E6921 33%, #36B00E 100%);
+	background-image: -moz-linear-gradient(left, #2E6921 33%, #36B00E 100%);
+	background-image: -webkit-linear-gradient(left, #2E6921 33%, #36B00E 100%);
+	background-image: -ms-linear-gradient(left, #2E6921 33%, #36B00E 100%);
+	background-image: linear-gradient(to left, #2E6921 33%, #36B00E 100%);
+
+}
+.degradado-amarillo{
+	background-image: -webkit-gradient(
+		linear,
+		right bottom,
+		left bottom,
+		color-stop(0.33, #C98C08),
+		color-stop(1, #F7C911)
+	);
+	background-image: -o-linear-gradient(left, #C98C08 33%, #F7C911 100%);
+	background-image: -moz-linear-gradient(left, #C98C08 33%, #F7C911 100%);
+	background-image: -webkit-linear-gradient(left, #C98C08 33%, #F7C911 100%);
+	background-image: -ms-linear-gradient(left, #C98C08 33%, #F7C911 100%);
+	background-image: linear-gradient(to left, #C98C08 33%, #F7C911 100%);
+
+}

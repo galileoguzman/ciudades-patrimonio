@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+	{% block content %}
+		<section id="ultimos-articulos">
+			<article class="articulo-de-inicio">
+				<h2>
+					<a href="#">
+						<img src="{% static "images/triangulo-azul.png" %}">
+						<span>Ciudad de Oaxaca</span>
+					</a>
+				</h2>
+				<figure>
+					<img src="{% static "images/post-de-inicio-01.jpg" %}" />
+				</figure>
+				<p>
+					Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
+				</p>
+				<a href="#" class="leer-mas">Más...</a>
+			</article>
+
+			<article class="articulo-de-inicio">
+				<h2>
+					<a href="#">
+						<img src="{% static "images/triangulo-verde.png" %}">
+						<span>Ciudad de Oaxaca</span>
+					</a>
+				</h2>
+				<figure>
+					<img src="{% static "images/post-de-inicio-01.jpg" %}" />
+				</figure>
+				<p>
+					Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
+				</p>
+				<a href="#" class="leer-mas">Más...</a>
+			</article>
+
+			<article class="articulo-de-inicio">
+				<h2>
+					<a href="#">
+						<img src="{% static "images/triangulo-rosa.png" %}">
+						<span>Ciudad de Oaxaca</span>
+					</a>
+				</h2>
+				<figure>
+					<img src="{% static "images/post-de-inicio-01.jpg" %}"/>
+				</figure>
+				<p>
+					Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
+				</p>
+				<a href="#" class="leer-mas">Más...</a>
+			</article>
+		</section>
+
+		<section id="contenido-secundario">
+			<section class="columna">
+				<h2> Ultimas Noticias </h2>
+				{% for Post in posts %}
+				<article class="articulo-secundario-inicio">
+					<figure>
+						<img src="{{ MEDIA_URL }}{{ Post.img }}" />
+					</figure>
+					<div class="thumb-text">
+						<h3><a href={{ Post.slug }}>{{ Post.title }}</a></h3>
+						<p>
+						Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks.</p>
+					</div>
+				</article>
+				{% endfor %}
+			</section>
+			<section class="columna">
+				<article class="video">
+					<h2>Vídeo</h2>
+					<iframe width="420" height="315" src="//www.youtube.com/embed/2stdSMRB_2s" frameborder="0" allowfullscreen></iframe>
+				</article>
+			</section>
+		</section>
+	{% endblock %}
